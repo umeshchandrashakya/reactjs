@@ -1,0 +1,66 @@
+.avtar {
+  width: 300px;
+  height: 200px;
+}
+.ProductComponents {
+  text-align: center;
+}
+
+.card {
+  width: 300px;
+  height: 340px;
+  margin-top: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.filter {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 500px;
+}
+.dropdown {
+  margin-top: 20px;
+
+  float: right;
+  margin-right: 20px;
+}
+a {
+  align-content: center;
+}
+#product_text {
+  height: 128px;
+  align-content: center;
+  margin-right: 20px;
+}
+h4 {
+  width: 280px;
+  font-size: 14px;
+  text-align: left;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: bold;
+}
+.pagination_nav {
+  margin-top: 10px;
+  position: relative;
+  margin-left: 20px;
+  align-items: center;
+}
+h5 {
+  margin-left: 10px;
+  font-size: 14px;
+  color: brown;
+  line-height: 1em;
+  max-height: 2em;
+  text-overflow: ellipsis;
+}
+.btn-dark {
+  float: right;
+  margin-right: 10px;
+}
+.btn-primary {
+  margin-left: 10px;
+}
+.avtar {
+  height: 180px;
+}

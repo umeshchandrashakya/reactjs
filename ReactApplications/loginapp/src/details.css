@@ -1,0 +1,33 @@
+:root {
+  --mainBlue: #2a2a72;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
+}
+body {
+  font-family: "Literata", serif !important;
+
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
+}
+
+.text-title {
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  size: 12px;
+}
+.text-blue {
+  color: var(--mainBlue);
+}
+.text-bright {
+  color: var(--lightBlue);
+}
+h6 {
+  font-size: 12px;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-stretch: expanded;
+  color: var(--lightBlue) !important;
+}
