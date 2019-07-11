@@ -115,12 +115,12 @@ export const Goingtoexpire = allProducts => {
   return goingToExpiredPro;
 };
 
-export const getItemPerPage = (currentPage, PostPerPage, json) => {
-  const indexOfLastPost = currentPage * PostPerPage;
-  const indexOfFirstPost = indexOfLastPost - PostPerPage;
-  const currentPage1 = getAllProducts(json).slice(
-    indexOfFirstPost,
-    indexOfLastPost
-  );
-  return currentPage1;
-};
+// export const getItemPerPage = (currentPage, PostPerPage, json) => {
+//   const indexOfLastPost = currentPage * PostPerPage;
+//   const indexOfFirstPost = indexOfLastPost - PostPerPage;
+//   const currentPage1 = getAllProducts(json).slice(
+//     indexOfFirstPost,
+//     indexOfLastPost
+//   );
+//   return currentPage1;
+// };

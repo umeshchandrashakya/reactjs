@@ -31,3 +31,6 @@ h6 {
   font-stretch: expanded;
   color: var(--lightBlue) !important;
 }
+.row {
+  margin-top: 30px;
+}

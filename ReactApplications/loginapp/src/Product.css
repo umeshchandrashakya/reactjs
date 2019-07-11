@@ -20,7 +20,6 @@
 }
 .dropdown {
   margin-top: 20px;
-
   float: right;
   margin-right: 20px;
 }
@@ -28,7 +27,7 @@ a {
   align-content: center;
 }
 #product_text {
-  height: 128px;
+  height: 150px;
   align-content: center;
   margin-right: 20px;
 }
@@ -39,13 +38,12 @@ h4 {
   margin-right: 10px;
   margin-left: 10px;
   font-family: bold;
+  max-height: 2.6em; /* (Number of lines you want visible) * (line-height) */
+  line-height: 1.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.pagination_nav {
-  margin-top: 10px;
-  position: relative;
-  margin-left: 20px;
-  align-items: center;
-}
+
 h5 {
   margin-left: 10px;
   font-size: 14px;
@@ -63,4 +61,11 @@ h5 {
 }
 .avtar {
   height: 180px;
+}
+
+.pagination {
+  margin-top: 10px;
+}
+.h1 {
+  color: wheat;
 }

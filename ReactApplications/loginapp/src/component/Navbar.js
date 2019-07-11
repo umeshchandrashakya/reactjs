@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../logo.svg";
 //import { ButtonContainer } from "./Button";
-export default class Navbar extends Component {
+import { connect } from "react-redux";
+import "../Product.css";
+class Navbar extends Component {
   render() {
     return (
       <Nav className="navbar navbar-expand-sm  navbar-dark px-sm-5">
-     
         <Link to="/">
           <img src={logo} alt="store" className="navbar-brand" />
         </Link>
@@ -22,15 +23,19 @@ export default class Navbar extends Component {
           <ButtonContainer>
             <span className="mr-2">
               <i className="fas fa-cart-plus " />
-            </span>
+            </span>{" "}
             my cart
           </ButtonContainer>
         </Link>
+        <h1>{this.props.count}</h1>
       </Nav>
     );
   }
 }
-
+const mapStateToProps = state1 => ({
+  count: state1.count
+});
+export default connect(mapStateToProps)(Navbar);
 const Nav = styled.nav`
   background: var(--mainBlue);
   .nav-link {
@@ -45,18 +50,18 @@ const Nav = styled.nav`
 
 const ButtonContainer = styled.button`
   text-transform: capitalize;
-font - size: 1.4rem;
-background: transparent;
-border: 0.05rem solid var(--lightBlue);
-border - radius: 0.5rem;
-padding: 0.2rem 0.5rem;
-outline - color: red;
-cursor: pointer;
-display: inline - block;
-margin: 0.2rem 0.5rem 0.2rem 0;
-transition: all 0.5s ease -in -out;
+  font-size: 1.4rem;
+  background: transparent;
+  border: 0.05rem solid var(--lightBlue);
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  outline-color: red;
+  cursor: pointer;
+  display: inline - block;
+  margin: 0.2rem 0.5rem 0.2rem 0;
+  transition: all 0.5s ease -in -out;
   &: hover {
-  background: var(--lightBlue);
-  color: var(--mainBlue);
-}
+    background: var(--lightBlue);
+    color: var(--mainBlue);
+  }
 `;
