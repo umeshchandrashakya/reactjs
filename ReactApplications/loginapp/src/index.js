@@ -18,7 +18,7 @@ function reducer(state = initialState, action) {
     case "INCREMENT":
       return {
         ...state,
-        productItime: [state.productItime, addedItime],
+        productItime: [...state.productItime, addedItime],
         count: state.count + 1
       };
     case "DECREMENT":

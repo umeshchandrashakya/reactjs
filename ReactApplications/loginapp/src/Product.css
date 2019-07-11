@@ -69,3 +69,10 @@ h5 {
 .h1 {
   color: wheat;
 }
+.span {
+  max-height: 2.6em; /* (Number of lines you want visible) * (line-height) */
+  line-height: 1.2em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

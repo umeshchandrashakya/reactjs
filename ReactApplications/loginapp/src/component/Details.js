@@ -23,6 +23,7 @@ export default class Details extends Component {
                   <h5>Serial No : {product.serialNo}</h5>
                   <h5>warrantyPeriod : {product.warrantyPeriod}</h5>
                   <h5>Price : {product.price}</h5>
+                  <h5>Features: {product.features}</h5>
                 </div>
               </div>
             </div>
